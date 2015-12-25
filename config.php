@@ -15,14 +15,16 @@ return [
 			'port' => '3306',
 			'dbname' => 'database',
 			'username' => 'root',
-			'password' => ''
+			'password' => '',
+			/*'socket' => '/home/raph/.mysql/mysql.sock'*/
 		],
 		'tests' => [
 			'host' => 'localhost',
 			'port' => '3306',
 			'dbname' => 'database-test',
 			'username' => 'test',
-			'password' => 'test'
+			'password' => 'test',
+			/*'socket' => '/home/raph/.mysql/mysql.sock'*/
 		]
 	],
 	'salt' => 'please change salt',
