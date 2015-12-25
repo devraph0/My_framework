@@ -82,8 +82,11 @@ class Core
             '/../../app/models',
             '/../../lib/' . __NAMESPACE__
             );
-        if ((strpos($class, '\\')) !== false) {
-            $class = substr($class, strrpos($class, '\\'), strlen($class));
+
+        $class = str_replace('\\', '/', $class);
+
+        if ((strpos($class, '/')) !== false) {
+            $class = substr($class, strrpos($class, '/'), strlen($class));
         }
         $p = ucfirst($class);
         $i = 0;
